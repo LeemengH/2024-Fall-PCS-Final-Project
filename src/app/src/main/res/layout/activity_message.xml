@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg2"
+    tools:context=".SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/acme"
+            android:padding="8dp"
+            android:text="@string/app_name"
+            android:textColor="@color/midnight_blue"
+            android:textSize="45dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="802dp"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="Messages"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/dynamic_text_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:padding="2dp">
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/fetch_and_encrypt_sms_button"
+                android:layout_width="168dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="show message"
+
+                android:layout_gravity="center"
+
+                android:textSize="17sp"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/message_button"
+                android:layout_width="350dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="40dp"
+                android:text="Sign Up / Log In"
+                android:textSize="20sp"
+                app:cornerRadius="30dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
